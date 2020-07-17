@@ -16,6 +16,11 @@
 Used to flash the SD card
 [Balena Etcher](https://www.balena.io/etcher/)
 
+### Add .Net Core
+```shell
+wget https://download.visualstudio.microsoft.com/download/pr/349f13f0-400e-476c-ba10-fe284b35b932/44a5863469051c5cf103129f1423ddb8/dotnet-sdk-3.1.102-linux-arm.tar.gz
+```
+
 
 ### Create Rules
 
