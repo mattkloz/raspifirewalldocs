@@ -19,23 +19,27 @@ Used to flash the SD card
 ### Add .Net Core
 Run the following shell commands on the RPi
 
+#### Get .Net Core
 ```shell
 wget https://download.visualstudio.microsoft.com/download/pr/349f13f0-400e-476c-ba10-fe284b35b932/44a5863469051c5cf103129f1423ddb8/dotnet-sdk-3.1.102-linux-arm.tar.gz
-mkdir dotnet-arm32
-```
-```shell
-wget https://download.visualstudio.microsoft.com/download/pr/8ccacf09-e5eb-481b-a407-2398b08ac6ac/1cef921566cb9d1ca8c742c9c26a521c/aspnetcore-runtime-3.1.2-linux-arm.tar.gz
-```
-```shell
-mkdir dotnet-arm32
-```
-```shell
-wget https://download.visualstudio.microsoft.com/download/pr/8ccacf09-e5eb-481b-a407-2398b08ac6ac/1cef921566cb9d1ca8c742c9c26a521c/aspnetcore-runtime-3.1.2-linux-arm.tar.gz
-```
-```shell
 wget https://download.visualstudio.microsoft.com/download/pr/8ccacf09-e5eb-481b-a407-2398b08ac6ac/1cef921566cb9d1ca8c742c9c26a521c/aspnetcore-runtime-3.1.2-linux-arm.tar.gz
 ```
 
+#### Create a directory and extract the .Net files to that directory
+```shell
+mkdir dotnet-arm32
+tar zxf dotnet-sdk-3.1.102-linux-arm.tar.gz -C $HOME/dotnet-arm32
+tar zxf aspnetcore-runtime-3.1.2-linux-arm.tar.gz -C $HOME/dotnet-arm32
+```
+#### Make .Net available globally
+```shell
+export DOTNET_ROOT=$HOME/dotnet-arm32
+export PATH=$PATH:$HOME/dotnet-arm32
+```
+#### Check that .Net is available outside of the dotnet-arm32 directory
+```shell
+dotnet --info
+```
 
 ### Create Rules
 
