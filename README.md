@@ -7,12 +7,15 @@
 1. [RaspberryPi 4](https://vilros.com/collections/raspberry-pi-4/products/raspberry-pi-4-4gb-ram)
 2. 32GB or greater micro SD card
 3. [USB 3.0 Ethernet Adapter](https://www.amazon.com/gp/product/B00FFJ0RKE/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+
 ---
 
 ### Load CentOS on RPi
+
+#### Get CentOS Image
 [CentOS 7.8.2003](http://mirrors.ocf.berkeley.edu/centos-altarch/7.8.2003/isos/armhfp/CentOS-Userland-7-armv7hl-RaspberryPI-Minimal-4-2003-sda.raw.xz)
 
-#### Balena Etcher to flash SD card
+#### Use Balena Etcher to flash SD card
 [Balena Etcher](https://www.balena.io/etcher/)
 
 ---
@@ -51,22 +54,18 @@ dotnet --info
 4. Bash: ./raspifirewall (runs the executable files)
 5. Bash: iptables -nL (list all rules)
 
----
 
 #### Setup
 This command creates the initial rule chain and it's rules. Included in the Setup are most variations of rules available. As a best practice, all traffic should be blocked that doesn't have an "Allow" rule, rather than blocking specific traffic but there are options to go either route. 
 
----
 
 #### Reload
 This command will stop drop all of the rules and then initialize them again
 
----
 
 #### Takedown
 This command will drop all of the rules and open up all traffic. Useful if you run into an issue with something being blocked that shouldn't be and you need a quick way to allow that traffic through while you append the rules.
 
----
 
 ### Web Interface
 
