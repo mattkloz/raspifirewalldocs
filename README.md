@@ -7,7 +7,7 @@
 1. [RaspberryPi 4](https://vilros.com/collections/raspberry-pi-4/products/raspberry-pi-4-4gb-ram)
 2. 32GB or greater micro SD card
 3. [USB 3.0 Ethernet Adapter](https://www.amazon.com/gp/product/B00FFJ0RKE/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-
+---
 
 ### Load CentOS on RPi
 [CentOS 7.8.2003](http://mirrors.ocf.berkeley.edu/centos-altarch/7.8.2003/isos/armhfp/CentOS-Userland-7-armv7hl-RaspberryPI-Minimal-4-2003-sda.raw.xz)
@@ -15,6 +15,7 @@
 #### Balena Etcher
 Used to flash the SD card
 [Balena Etcher](https://www.balena.io/etcher/)
+---
 
 ### Add .Net Core
 Run the following shell commands on the RPi
@@ -40,6 +41,7 @@ export PATH=$PATH:$HOME/dotnet-arm32
 ```shell
 dotnet --info
 ```
+---
 
 ### Create Rules
 
