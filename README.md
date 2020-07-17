@@ -48,13 +48,15 @@ dotnet --info
 
 ### Create Rules
 
-1. ```shell
+```shell
 mkdir /etc/raspifirewall
 ```
-2. Add Setup, Takedown, Reload files (add Raspifirewall folder through git or manually)
-3. Bash: chmod +x raspifirewall* (makes the files executable)
-4. Bash: ./raspifirewall (runs the executable files)
-5. Bash: iptables -nL (list all rules)
+##### Add Setup, Takedown, Reload files to directory (add Raspifirewall folder through git or manually)
+```shell
+chmod +x raspifirewall* (makes the files executable)
+./raspifirewall (runs the executable files)
+iptables -nL (list all rules)
+```
 
 
 #### Setup
