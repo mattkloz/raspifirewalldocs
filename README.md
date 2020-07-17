@@ -12,8 +12,7 @@
 ### Load CentOS on RPi
 [CentOS 7.8.2003](http://mirrors.ocf.berkeley.edu/centos-altarch/7.8.2003/isos/armhfp/CentOS-Userland-7-armv7hl-RaspberryPI-Minimal-4-2003-sda.raw.xz)
 
-#### Balena Etcher
-Used to flash the SD card
+#### Balena Etcher to flash SD card
 [Balena Etcher](https://www.balena.io/etcher/)
 ---
 
