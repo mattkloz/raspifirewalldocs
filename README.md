@@ -50,8 +50,8 @@ dotnet --info
 
 ```shell
 mkdir /etc/raspifirewall
+* Add Setup, Takedown, Reload files to directory (add Raspifirewall folder through git or manually)
 ```
-##### Add Setup, Takedown, Reload files to directory (add Raspifirewall folder through git or manually)
 ```shell
 chmod +x raspifirewall* (makes the files executable)
 ./raspifirewall (runs the executable files)
