@@ -46,6 +46,17 @@ dotnet --info
 ```
 ---
 
+### Add Nodejs
+```shell
+yum install -y gcc-c++ make
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -
+sudo yum install nodejs
+node -v (just ensuring it is installed)
+npm -v (just ensuring it is installed)
+yum install nano (optional for editing)
+```
+---
+
 ### Create Rules
 
 ```shell
