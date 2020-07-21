@@ -7,6 +7,7 @@
 1. [RaspberryPi 4](https://vilros.com/collections/raspberry-pi-4/products/raspberry-pi-4-4gb-ram)
 2. 32GB or greater micro SD card
 3. [USB 3.0 Ethernet Adapter](https://www.amazon.com/gp/product/B00FFJ0RKE/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+4. [Noctua 5V fan](https://www.amazon.com/gp/product/B072Q3CMRW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 
 ---
 
@@ -17,6 +18,12 @@
 
 #### Use Balena Etcher to flash SD card
 [Balena Etcher](https://www.balena.io/etcher/)
+
+1. Download CentOS image from link
+2. Download Balena Etcher from link
+3. Insert microSD card into Mac
+4. Open Balena Etcher, select CentOS image, select SD card (should be selected by default), click Flash to flash the card
+5. Insert SD Card into RPi
 
 ---
 
