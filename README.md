@@ -25,7 +25,7 @@
 4. Open Balena Etcher, select CentOS image, select SD card (should be selected by default), click Flash to flash the card
 5. Insert SD Card into RPi
 
-<Will Add Initial Login Instructions>
+###Will Add Initial Login Instructions
 
 ---
 
