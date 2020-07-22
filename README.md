@@ -8,6 +8,7 @@
 2. 32GB or greater micro SD card
 3. [USB 3.0 Ethernet Adapter](https://www.amazon.com/gp/product/B00FFJ0RKE/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 4. [Noctua 5V fan](https://www.amazon.com/gp/product/B072Q3CMRW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+5. Optional: [RPi4 + Noctua Fan Case](https://www.thingiverse.com/thing:4154600)
 
 ---
 
