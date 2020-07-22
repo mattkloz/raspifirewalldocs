@@ -30,6 +30,7 @@
 1. After Inserting etched SD card into RPi, connect RPi to a monitor, keyboard and mouse
 2. CentOS desktop will be displayed
 3. Right-click on Desktop > Open in Terminal
+4. Defaults username: root, password: centos
 
 ### Config SSH
 ```shell
