@@ -25,7 +25,34 @@
 4. Open Balena Etcher, select CentOS image, select SD card (should be selected by default), click Flash to flash the card
 5. Insert SD Card into RPi
 
-### Will Add Initial Login Instructions
+### Boot Instructions
+1. After Inserting etched SD card into RPi, connect RPi to a monitor, keyboard and mouse
+2. CentOS desktop will be displayed
+3. Right-click on Desktop > Open in Terminal
+
+### Config SSH
+```shell
+sudo yum –y install openssh-server openssh-clients
+sudo systemctl start sshd
+sudo systemctl status sshd (displays ssh status)
+systemctl stop sshd (ensure that ssh service has stopped)
+sudo systemctl enable sshd (enables ssh to start automatically)
+sudo nano /etc/ssh/sshd_config
+```
+Set the following:
+1. Uncomment and set PermitRootLogin to no (to prevent root user attacks)
+2. Change port # to something non-standard (like 2003)
+3. Save and Exit the file
+```shell
+service sshd restart
+```
+Add the following to the Setup file to restrict access to SSH (by IP) if you set the port above to 2003
+```shell
+-A INPUT -s <Your IP here> -m state --state NEW -p tcp --dport 2003 -j ACCEPT
+run ./Reload
+```
+
+
 
 ---
 
